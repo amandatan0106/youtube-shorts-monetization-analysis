@@ -29,14 +29,21 @@ CREATOR_MONETIZATION/
 ├── data/
 │   ├── makeup_shorts_raw.csv        ← raw scraped data
 │   └── makeup_shorts_clean.csv      ← cleaned, feature-engineered data
-│
-├── notebooks/
-│   ├── data_fetching.ipynb          ← YouTube API data collection
-│   ├── data_analysis.ipynb          ← EDA, cleaning, feature engineering
-│   └── modeling.ipynb               ← regression, classification, A/B test
+│ 
+├── data_fetching.ipynb              ← YouTube API data collection
+│ 
+├── data_analysis.ipynb              ← EDA, cleaning, feature engineering
+│ 
+├── modeling.ipynb                   ← regression, classification, A/B test
 │
 └── README.md
 ```
+### Running the notebooks
+Run in this order:
+
+1. `data_fetching.ipynb` — collects raw data (~10-15 mins, requires API key)
+2. `data_analysis.ipynb` — EDA and feature engineering
+3. `modeling.ipynb` — all models and A/B test (~20-30 mins for GridSearch)
 
 ---
 
